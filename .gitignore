@@ -1,0 +1,10 @@
+.env
+.env.*
+.*.env
+
+# misc
+.DS_Store
+db/*.db
+
+data
+logs/application.log
