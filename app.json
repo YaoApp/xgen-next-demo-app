@@ -3,11 +3,11 @@
       "description": "Yao App Dashboard.",
       "login": {
             "entry": {
-                  "admin": "/kanban/kanban.index",
+                  "admin": "/table/service",
                   "user": "/table/service"
             }
       },
-      "option": {
+      "optional": {
             "hide_user": false,
             "hide_menu": false
       }

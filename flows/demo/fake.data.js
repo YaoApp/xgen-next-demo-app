@@ -1,6 +1,30 @@
 function main() {
 	return {
-		Admin: [
+		menu: [
+			{
+				id: 1,
+				name: 'Table',
+				path: '/table/service',
+				icon: 'icon-layout',
+				rank: 1,
+				status: 'enabled',
+				visible_menu: 0,
+				blocks: 0,
+				parent: null
+			},
+			{
+				id: 2,
+				name: 'Form',
+				path: '/form/service',
+				icon: '',
+				rank: 1,
+				status: 'enabled',
+				visible_menu: 0,
+				blocks: 0,
+				parent: 1
+			}
+		],
+		admin: [
 			{
 				name: 'Tyler Kwon',
 				type: 'admin',

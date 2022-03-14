@@ -4,6 +4,15 @@
       "description": "Import Demo Data",
       "nodes": [
             {
+                  "name": "Clean Menu",
+                  "engine": "xiang",
+                  "query": {
+                        "sql": {
+                              "stmt": "delete from `xiang_menu`"
+                        }
+                  }
+            },
+            {
                   "name": "Clean Admin",
                   "engine": "xiang",
                   "query": {
@@ -17,16 +26,33 @@
                   "script": "data"
             },
             {
-                  "name": "Update Menu",
-                  "process": "flows.menu.index",
-                  "args": []
+                  "name": "Menu",
+                  "process": "xiang.helper.ArraySplit",
+                  "args": [
+                        "{{$res.Data.menu}}"
+                  ]
+            },
+            {
+                  "name": "Admin",
+                  "process": "xiang.helper.ArraySplit",
+                  "args": [
+                        "{{$res.Data.admin}}"
+                  ]
+            },
+            {
+                  "name": "Insert",
+                  "process": "models.xiang.menu.Insert",
+                  "args": [
+                        "{{$res.Menu.columns}}",
+                        "{{$res.Menu.values}}"
+                  ]
             },
             {
                   "name": "Insert Admin",
                   "process": "models.xiang.user.Insert",
                   "args": [
-                        "{{$res.data.columns}}",
-                        "{{$res.data.values}}"
+                        "{{$res.Admin.columns}}",
+                        "{{$res.Admin.values}}"
                   ]
             }
       ],
