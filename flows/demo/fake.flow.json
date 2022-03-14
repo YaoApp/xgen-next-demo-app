@@ -1,0 +1,34 @@
+{
+      "label": "Import Demo Data",
+      "version": "1.0.0",
+      "description": "Import Demo Data",
+      "nodes": [
+            {
+                  "name": "Clean Admin",
+                  "engine": "xiang",
+                  "query": {
+                        "sql": {
+                              "stmt": "truncate `xiang_user`"
+                        }
+                  }
+            },
+            {
+                  "name": "Data",
+                  "script": "data"
+            },
+            {
+                  "name": "Update Menu",
+                  "process": "flows.menu.index",
+                  "args": []
+            },
+            {
+                  "name": "Insert Admin",
+                  "process": "models.xiang.user.Insert",
+                  "args": [
+                        "{{$res.data.columns}}",
+                        "{{$res.data.values}}"
+                  ]
+            }
+      ],
+      "output": {}
+}
