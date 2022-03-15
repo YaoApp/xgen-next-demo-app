@@ -1,6 +1,6 @@
 {
-      "name": "YaoApp",
-      "description": "Yao App Dashboard.",
+      "name": "Yao App Dashboard",
+      "description": "The coolest dashboard for yao app.",
       "login": {
             "entry": {
                   "admin": "/table/service",
