@@ -40,7 +40,14 @@
                   ]
             },
             {
-                  "name": "Insert",
+                  "name": "User",
+                  "process": "xiang.helper.ArraySplit",
+                  "args": [
+                        "{{$res.Data.user}}"
+                  ]
+            },
+            {
+                  "name": "Insert Menu",
                   "process": "models.xiang.menu.Insert",
                   "args": [
                         "{{$res.Menu.columns}}",
@@ -53,6 +60,14 @@
                   "args": [
                         "{{$res.Admin.columns}}",
                         "{{$res.Admin.values}}"
+                  ]
+            },
+            {
+                  "name": "Insert User",
+                  "process": "models.user.Insert",
+                  "args": [
+                        "{{$res.User.columns}}",
+                        "{{$res.User.values}}"
                   ]
             }
       ],

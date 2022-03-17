@@ -1,0 +1,35 @@
+{
+      "name": "User API",
+      "version": "1.0.0",
+      "description": "User API",
+      "group": "user",
+      "guard": "bearer-jwt",
+      "paths": [
+            {
+                  "path": "/captcha",
+                  "method": "GET",
+                  "guard": "-",
+                  "process": "xiang.helper.Captcha",
+                  "in": [
+                        ":query"
+                  ],
+                  "out": {
+                        "status": 200,
+                        "type": "application/json"
+                  }
+            },
+            {
+                  "path": "/login",
+                  "method": "POST",
+                  "guard": "-",
+                  "process": "flows.login.password",
+                  "in": [
+                        ":payload"
+                  ],
+                  "out": {
+                        "status": 200,
+                        "type": "application/json"
+                  }
+            }
+      ]
+}

@@ -33,15 +33,22 @@ function main() {
 				password: 'A123456p+',
 				status: 'enabled',
 				extra: {}
+			}
+		],
+		user: [
+			{
+				id: 1,
+				name: 'Robert',
+				nickname: 'Victor',
+				mobile: '13439882351',
+				password: 'A+123abc'
 			},
 			{
-				name: 'Alfonso Morales',
-				type: 'staff',
-				email: 'staff@iqka.com',
-				mobile: null,
-				password: 'S123456p+',
-				status: 'enabled',
-				extra: {}
+				id: 2,
+				name: 'Julian',
+				nickname: 'Victor',
+				mobile: '18696486865',
+				password: 'A+123abc'
 			}
 		]
 	}

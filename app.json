@@ -5,6 +5,10 @@
             "entry": {
                   "admin": "/table/service",
                   "user": "/table/service"
+            },
+            "user": {
+                  "captcha": "/api/user/captcha",
+                  "login": "/api/user/login"
             }
       },
       "optional": {
