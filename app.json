@@ -1,6 +1,6 @@
 {
-      "name": "Yao App Dashboard",
-      "description": "The coolest dashboard for yao app.",
+      "name": "Pet Hospital",
+      "description": "The management system for pet hospital.",
       "login": {
             "entry": {
                   "admin": "/x/table/pet",

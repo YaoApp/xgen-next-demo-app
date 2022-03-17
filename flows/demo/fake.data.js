@@ -3,9 +3,9 @@ function main() {
 		menu: [
 			{
 				id: 1,
-				name: 'Table',
-				path: '/table/service',
-				icon: 'icon-layout',
+				name: 'Pet',
+				path: '/x/table/pet',
+				icon: 'icon-twitch',
 				rank: 1,
 				status: 'enabled',
 				visible_menu: 0,
@@ -13,15 +13,59 @@ function main() {
 				parent: null
 			},
 			{
+				parent: 1,
 				id: 2,
-				name: 'Form',
-				path: '/form/service',
+				name: 'Pet',
+				path: '/x/table/pet',
 				icon: '',
 				rank: 1,
 				status: 'enabled',
 				visible_menu: 0,
+				blocks: 0
+			},
+			{
+				parent: 1,
+				id: 3,
+				name: 'Add Pet',
+				path: '/x/form/pet',
+				icon: '',
+				rank: 2,
+				status: 'enabled',
+				visible_menu: 0,
+				blocks: 0
+			},
+			{
+				id: 4,
+				name: 'Doctor',
+				path: '/x/table/doctor',
+				icon: 'icon-users',
+				rank: 1,
+				status: 'enabled',
+				visible_menu: 0,
 				blocks: 0,
-				parent: 1
+				parent: null
+			},
+			{
+				parent: 4,
+				id: 5,
+				name: 'Doctor',
+				path: '/x/table/doctor',
+				icon: '',
+				rank: 1,
+				status: 'enabled',
+				visible_menu: 0,
+				blocks: 0
+			},
+			{
+				parent: 4,
+				id: 6,
+				name: 'Add Doctor',
+				path: '/x/form/doctor',
+				icon: '',
+				rank: 2,
+				status: 'enabled',
+				visible_menu: 0,
+				blocks: 0
 			}
 		],
 		admin: [
