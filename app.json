@@ -3,8 +3,8 @@
       "description": "The coolest dashboard for yao app.",
       "login": {
             "entry": {
-                  "admin": "/table/service",
-                  "user": "/table/service"
+                  "admin": "/x/table/pet",
+                  "user": "/x/table/pet"
             },
             "user": {
                   "captcha": "/api/user/captcha",
