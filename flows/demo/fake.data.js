@@ -8,19 +8,19 @@ function main() {
 				icon: 'icon-twitch',
 				rank: 1,
 				status: 'enabled',
-				visible_menu: 0,
+				visible_menu: 1,
 				blocks: 0,
 				parent: null
 			},
 			{
 				parent: 1,
 				id: 2,
-				name: 'Pet',
+				name: 'Pet List',
 				path: '/x/table/pet',
 				icon: '',
 				rank: 1,
 				status: 'enabled',
-				visible_menu: 0,
+				visible_menu: 1,
 				blocks: 0
 			},
 			{
@@ -31,7 +31,7 @@ function main() {
 				icon: '',
 				rank: 2,
 				status: 'enabled',
-				visible_menu: 0,
+				visible_menu: 1,
 				blocks: 0
 			},
 			{
@@ -39,21 +39,21 @@ function main() {
 				name: 'Doctor',
 				path: '/x/table/doctor',
 				icon: 'icon-users',
-				rank: 1,
+				rank: 2,
 				status: 'enabled',
-				visible_menu: 0,
+				visible_menu: 1,
 				blocks: 0,
 				parent: null
 			},
 			{
 				parent: 4,
 				id: 5,
-				name: 'Doctor',
+				name: 'Doctor List',
 				path: '/x/table/doctor',
 				icon: '',
 				rank: 1,
 				status: 'enabled',
-				visible_menu: 0,
+				visible_menu: 1,
 				blocks: 0
 			},
 			{
@@ -63,6 +63,94 @@ function main() {
 				path: '/x/form/doctor',
 				icon: '',
 				rank: 2,
+				status: 'enabled',
+				visible_menu: 1,
+				blocks: 0
+			},
+			{
+				parent: null,
+				id: 7,
+				name: 'Archive',
+				path: '/x/table/archive',
+				icon: 'icon-folder',
+				rank: 3,
+				status: 'enabled',
+				visible_menu: 1,
+				blocks: 0
+			},
+			{
+				parent: 7,
+				id: 8,
+				name: 'Archive List',
+				path: '/x/table/archive',
+				icon: '',
+				rank: 1,
+				status: 'enabled',
+				visible_menu: 1,
+				blocks: 0
+			},
+			{
+				parent: 7,
+				id: 9,
+				name: 'Add Archive',
+				path: '/x/form/archive',
+				icon: '',
+				rank: 2,
+				status: 'enabled',
+				visible_menu: 1,
+				blocks: 0
+			},
+			{
+				parent: null,
+				id: 10,
+				name: 'Department',
+				path: '/x/table/department',
+				icon: 'icon-map',
+				rank: 4,
+				status: 'enabled',
+				visible_menu: 0,
+				blocks: 0
+			},
+			{
+				parent: null,
+				id: 11,
+				name: 'Case',
+				path: '/x/table/case',
+				icon: 'icon-file',
+				rank: 5,
+				status: 'enabled',
+				visible_menu: 0,
+				blocks: 0
+			},
+			{
+				parent: null,
+				id: 12,
+				name: 'Finance',
+				path: '/x/table/finance',
+				icon: 'icon-dollar-sign',
+				rank: 6,
+				status: 'enabled',
+				visible_menu: 0,
+				blocks: 0
+			},
+			{
+				parent: null,
+				id: 13,
+				name: 'Help',
+				path: '/x/table/help',
+				icon: 'icon-help-circle',
+				rank: 7,
+				status: 'enabled',
+				visible_menu: 0,
+				blocks: 0
+			},
+			{
+				parent: null,
+				id: 14,
+				name: 'Disease',
+				path: '/x/table/disease',
+				icon: 'icon-clipboard',
+				rank: 8,
 				status: 'enabled',
 				visible_menu: 0,
 				blocks: 0
