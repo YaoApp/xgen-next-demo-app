@@ -3,8 +3,8 @@
       "description": "The management system for pet hospital.",
       "login": {
             "entry": {
-                  "admin": "/x/table/pet",
-                  "user": "/x/table/pet"
+                  "admin": "/x/Table/pet",
+                  "user": "/x/Table/pet"
             },
             "user": {
                   "captcha": "/api/user/captcha",
@@ -12,7 +12,7 @@
             }
       },
       "optional": {
-            "hide_user": false,
-            "hide_menu": false
+            "hideNotification": false,
+            "hideSetting": false
       }
 }
