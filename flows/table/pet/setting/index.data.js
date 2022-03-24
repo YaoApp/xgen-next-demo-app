@@ -46,36 +46,18 @@ function main() {
 					name: '名称'
 				}
 			],
-			actions: {
-				checkbox: [
-					{
-						value: ':status',
-						visible_label: false,
-						status: [
-							{
-								label: '开启',
-								value: 'enabled'
-							},
-							{
-								label: '关闭',
-								value: 'disabled'
-							}
-						]
+			actions: [
+				{
+					title: '查看-Modal',
+					icon: 'icon-eye',
+					props: {
+						type: 'view',
+						useModal: true,
+						formName: 'menu',
+						formId: ':id'
 					}
-				],
-				items: [
-					{
-						title: '查看-Modal',
-						icon: 'icon-eye',
-						props: {
-							type: 'view',
-							useModal: true,
-							formName: 'menu',
-							formId: ':id'
-						}
-					}
-				]
-			}
+				}
+			]
 		},
 		fileds: {
 			filter: {
