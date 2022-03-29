@@ -1,11 +1,12 @@
 function main() {
 	return {
+		primary: 'id',
 		header: {
 			preset: {
 				batch: {
 					columns: [
 						{
-							name: '服务名称',
+							name: '名称',
 							width: 12
 						}
 					],
@@ -19,7 +20,7 @@ function main() {
 				{
 					title: '页面跳转',
 					icon: 'icon-airplay',
-					action: {
+					props: {
 						type: 'history.push',
 						payload: '/404'
 					}
@@ -27,10 +28,26 @@ function main() {
 			]
 		},
 		filter: {
-			btnAddText: '宠物',
-			children: [
+			btnAddText: '新增宠物',
+			columns: [
 				{
-					name: '关键词',
+					name: '名称',
+					width: 4
+				},
+				{
+					name: '名称',
+					width: 4
+				},
+				{
+					name: '名称',
+					width: 4
+				},
+				{
+					name: '名称',
+					width: 4
+				},
+				{
+					name: '名称',
 					width: 4
 				}
 			]
