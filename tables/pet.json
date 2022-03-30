@@ -1,0 +1,65 @@
+{
+      "name": "宠物列表",
+      "version": "1.0.0",
+      "decription": "宠物列表",
+      "bind": {
+            "model": "pet",
+            "withs": {
+                  "manu": {
+                        "query": {
+                              "select": [
+                                    "id",
+                                    "name",
+                                    "short_name",
+                                    "status"
+                              ]
+                        }
+                  },
+                  "kind": {
+                        "query": {
+                              "select": [
+                                    "id",
+                                    "name"
+                              ]
+                        }
+                  }
+            }
+      },
+      "apis": {
+            "search": {
+                  "process": "models.pet.Paginate",
+                  "guard": "-",
+                  "default": [
+                        {},
+                        null,
+                        10
+                  ]
+            },
+            "find": {
+                  "process": "models.pet.Find",
+                  "guard": "-",
+                  "default": [
+                        null,
+                        {
+                              "withs": {
+                                    "doctor": {
+                                          "query": {
+                                                "select": [
+                                                      "id",
+                                                      "name"
+                                                ]
+                                          }
+                                    }
+                              }
+                        }
+                  ]
+            },
+            "save": {
+                  "guard": "-"
+            },
+            "setting": {
+                  "process": "flows.table.pet.setting.index",
+                  "guard": "-"
+            }
+      }
+}
