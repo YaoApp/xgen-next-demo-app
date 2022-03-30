@@ -47,6 +47,20 @@
                   ]
             },
             {
+                  "name": "Pet",
+                  "process": "xiang.helper.ArraySplit",
+                  "args": [
+                        "{{$res.Data.pet}}"
+                  ]
+            },
+            {
+                  "name": "Doctor",
+                  "process": "xiang.helper.ArraySplit",
+                  "args": [
+                        "{{$res.Data.doctor}}"
+                  ]
+            },
+            {
                   "name": "Insert Menu",
                   "process": "models.xiang.menu.Insert",
                   "args": [
@@ -68,6 +82,22 @@
                   "args": [
                         "{{$res.User.columns}}",
                         "{{$res.User.values}}"
+                  ]
+            },
+            {
+                  "name": "Insert Pet",
+                  "process": "models.pet.Insert",
+                  "args": [
+                        "{{$res.Pet.columns}}",
+                        "{{$res.Pet.values}}"
+                  ]
+            },
+            {
+                  "name": "Insert Doctor",
+                  "process": "models.doctor.Insert",
+                  "args": [
+                        "{{$res.Doctor.columns}}",
+                        "{{$res.Doctor.values}}"
                   ]
             }
       ],

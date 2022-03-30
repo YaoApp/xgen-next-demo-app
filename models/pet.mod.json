@@ -1,0 +1,81 @@
+{
+      "name": "Pet",
+      "table": {
+            "name": "pet",
+            "comment": "宠物表",
+            "engine": "InnoDB"
+      },
+      "columns": [
+            {
+                  "name": "id",
+                  "comment": "ID",
+                  "type": "ID"
+            },
+            {
+                  "name": "name",
+                  "comment": "昵称",
+                  "type": "string",
+                  "length": 80,
+                  "index": true,
+                  "nullable": true
+            },
+            {
+                  "name": "type",
+                  "comment": "类型",
+                  "type": "enum",
+                  "option": [
+                        "cat",
+                        "dog",
+                        "others"
+                  ],
+                  "index": true
+            },
+            {
+                  "name": "status",
+                  "comment": "入院状态",
+                  "type": "enum",
+                  "option": [
+                        "checked",
+                        "curing",
+                        "cured"
+                  ],
+                  "index": true
+            },
+            {
+                  "name": "stay",
+                  "comment": "入院时间",
+                  "type": "integer"
+            },
+            {
+                  "name": "cost",
+                  "comment": "花费",
+                  "type": "integer"
+            },
+            {
+                  "name": "doctor_id",
+                  "type": "json",
+                  "comment": "相关职工",
+                  "index": true
+            }
+      ],
+      "relations": {
+            "doctor": {
+                  "type": "hasMany",
+                  "model": "doctor",
+                  "key": "id",
+                  "foreign": "doctor_id",
+                  "query": {
+                        "select": [
+                              "id",
+                              "nickname"
+                        ]
+                  }
+            }
+      },
+      "values": [],
+      "indexes": [],
+      "option": {
+            "timestamps": true,
+            "soft_deletes": true
+      }
+}
