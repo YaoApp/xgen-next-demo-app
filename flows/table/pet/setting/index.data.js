@@ -60,7 +60,8 @@ function main() {
 			},
 			columns: [
 				{
-					name: '名称'
+					name: '名称',
+					width: 120
 				}
 			],
 			actions: [
