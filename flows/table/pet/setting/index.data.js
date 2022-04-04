@@ -53,29 +53,38 @@ function main() {
 			]
 		},
 		table: {
-			props: {
-				scroll: {
-					x: 1200
-				}
-			},
+			props: {},
 			columns: [
 				{
 					name: '名称',
 					width: 120
 				}
 			],
-			actions: [
-				{
-					title: '查看-Modal',
-					icon: 'icon-eye',
-					props: {
+			operation: {
+				fold: false,
+				actions: [
+					{
+						title: '查看',
+						icon: 'icon-eye',
 						type: 'view',
-						useModal: true,
-						formName: 'menu',
-						formId: ':id'
+						how: 'modal',
+						props: {
+							model: 'menu',
+							bind: 'id'
+						}
+                              },
+                              {
+						title: '编辑',
+						icon: 'icon-edit',
+						type: 'edit',
+						how: 'modal',
+						props: {
+							model: 'menu',
+							bind: 'id'
+						}
 					}
-				}
-			]
+				]
+			}
 		},
 		fileds: {
 			filter: {
