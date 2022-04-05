@@ -40,8 +40,10 @@ function main() {
 			props: {},
 			columns: [
 				{
-					name: '名称',
-					width: 120
+					name: '名称'
+				},
+				{
+					name: '消费金额'
 				}
 			],
 			operation: {
@@ -56,8 +58,8 @@ function main() {
 							model: 'menu',
 							bind: 'id'
 						}
-                              },
-                              {
+					},
+					{
 						title: '编辑',
 						icon: 'icon-edit-2',
 						type: 'edit',
@@ -94,6 +96,17 @@ function main() {
 						props: {
 							placeholder: '请输入宠物名称'
 						}
+					}
+				},
+				消费金额: {
+					bind: 'cost',
+					view: {
+						type: 'Text',
+						props: {}
+					},
+					edit: {
+						type: 'Input',
+						props: {}
 					}
 				}
 			}
