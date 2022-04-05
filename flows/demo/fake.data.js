@@ -220,6 +220,114 @@ const pet = [
 		stay: 1,
 		cost: 1000,
 		doctor_id: [6]
+	},
+	{
+		id: 5,
+		name: '毛毛',
+		type: 'cat',
+		status: 'curing',
+		stay: 3,
+		cost: 2000,
+		doctor_id: [1, 4, 6]
+	},
+	{
+		id: 6,
+		name: '阿布',
+		type: 'dog',
+		status: 'curing',
+		stay: 6,
+		cost: 4200,
+		doctor_id: [2, 4]
+	},
+	{
+		id: 7,
+		name: '咪咪',
+		type: 'others',
+		status: 'cured',
+		stay: 7,
+		cost: 6000,
+		doctor_id: [3, 5]
+	},
+	{
+		id: 8,
+		name: '狗蛋',
+		type: 'dog',
+		status: 'checked',
+		stay: 1,
+		cost: 1000,
+		doctor_id: [6]
+	},
+	{
+		id: 9,
+		name: '毛毛',
+		type: 'cat',
+		status: 'curing',
+		stay: 3,
+		cost: 2000,
+		doctor_id: [1, 4, 6]
+	},
+	{
+		id: 10,
+		name: '阿布',
+		type: 'dog',
+		status: 'curing',
+		stay: 6,
+		cost: 4200,
+		doctor_id: [2, 4]
+	},
+	{
+		id: 11,
+		name: '咪咪',
+		type: 'others',
+		status: 'cured',
+		stay: 7,
+		cost: 6000,
+		doctor_id: [3, 5]
+	},
+	{
+		id: 12,
+		name: '狗蛋',
+		type: 'dog',
+		status: 'checked',
+		stay: 1,
+		cost: 1000,
+		doctor_id: [6]
+	},
+	{
+		id: 13,
+		name: '毛毛',
+		type: 'cat',
+		status: 'curing',
+		stay: 3,
+		cost: 2000,
+		doctor_id: [1, 4, 6]
+	},
+	{
+		id: 14,
+		name: '阿布',
+		type: 'dog',
+		status: 'curing',
+		stay: 6,
+		cost: 4200,
+		doctor_id: [2, 4]
+	},
+	{
+		id: 15,
+		name: '咪咪',
+		type: 'others',
+		status: 'cured',
+		stay: 7,
+		cost: 6000,
+		doctor_id: [3, 5]
+	},
+	{
+		id: 16,
+		name: '狗蛋',
+		type: 'dog',
+		status: 'checked',
+		stay: 1,
+		cost: 1000,
+		doctor_id: [6]
 	}
 ]
 
@@ -296,8 +404,8 @@ function main() {
 	return {
 		menu,
 		admin,
-            user,
-            pet,
-            doctor
+		user,
+		pet,
+		doctor
 	}
 }

@@ -33,22 +33,6 @@ function main() {
 				{
 					name: '名称',
 					width: 4
-				},
-				{
-					name: '名称',
-					width: 4
-				},
-				{
-					name: '名称',
-					width: 4
-				},
-				{
-					name: '名称',
-					width: 4
-				},
-				{
-					name: '名称',
-					width: 4
 				}
 			]
 		},
@@ -75,7 +59,7 @@ function main() {
                               },
                               {
 						title: '编辑',
-						icon: 'icon-edit',
+						icon: 'icon-edit-2',
 						type: 'edit',
 						how: 'modal',
 						props: {
