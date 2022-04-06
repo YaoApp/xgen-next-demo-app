@@ -52,21 +52,36 @@ function main() {
 					{
 						title: '查看',
 						icon: 'icon-eye',
-						type: 'view',
-						how: 'modal',
-						props: {
-							model: 'menu',
-							bind: 'id'
+						action: {
+							'Common.openModal': {
+								Form: {
+									type: 'view',
+									model: 'pet'
+								}
+							}
 						}
 					},
 					{
 						title: '编辑',
 						icon: 'icon-edit-2',
-						type: 'edit',
-						how: 'modal',
-						props: {
-							model: 'menu',
-							bind: 'id'
+						action: {
+							'Common.openModal': {
+								Form: {
+									type: 'edit',
+									model: 'pet'
+								}
+							}
+						}
+					},
+					{
+						title: '删除',
+						icon: 'icon-trash-2',
+						action: {
+							'Table.delete': {}
+						},
+						style: 'danger',
+						confirm: {
+							title: '确认删除，删除后数据无法恢复？'
 						}
 					}
 				]

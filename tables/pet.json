@@ -54,9 +54,6 @@
                         }
                   ]
             },
-            "save": {
-                  "guard": "-"
-            },
             "setting": {
                   "process": "flows.table.pet.setting.index",
                   "guard": "-"
