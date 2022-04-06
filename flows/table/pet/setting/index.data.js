@@ -43,11 +43,14 @@ function main() {
 					name: '名称'
 				},
 				{
+					name: '状态'
+				},
+				{
 					name: '消费金额'
 				}
 			],
 			operation: {
-				fold: false,
+				fold: true,
 				actions: [
 					{
 						title: '查看',
@@ -74,14 +77,46 @@ function main() {
 						}
 					},
 					{
+						title: '治愈',
+						icon: 'icon-check',
+						action: {
+							'Table.save': {
+								id: ':id',
+								status: 'cured'
+							}
+						},
+						style: 'success',
+						tip: {
+							title: '提示',
+							desc: '确认变更为治愈状态？'
+						}
+					},
+					{
+						title: '跳转查看',
+						icon: 'icon-book-open',
+						action: {
+							'Common.historyPush': {
+								pathname: '/x/Form/pet/:id'
+							}
+						}
+					},
+					{
+						title: '返回上一页',
+						icon: 'icon-arrow-left',
+						action: {
+							'Common.historyBack': {}
+						}
+					},
+					{
 						title: '删除',
 						icon: 'icon-trash-2',
 						action: {
 							'Table.delete': {}
 						},
 						style: 'danger',
-						confirm: {
-							title: '确认删除，删除后数据无法恢复？'
+						tip: {
+							title: '提示',
+							desc: '确认删除，删除后数据无法恢复？'
 						}
 					}
 				]
@@ -111,6 +146,17 @@ function main() {
 						props: {
 							placeholder: '请输入宠物名称'
 						}
+					}
+				},
+				状态: {
+					bind: 'status',
+					view: {
+						type: 'Text',
+						props: {}
+					},
+					edit: {
+						type: 'Input',
+						props: {}
 					}
 				},
 				消费金额: {
