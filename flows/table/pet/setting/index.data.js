@@ -50,7 +50,7 @@ function main() {
 				}
 			],
 			operation: {
-				fold: true,
+				fold: false,
 				actions: [
 					{
 						title: '查看',
@@ -86,7 +86,7 @@ function main() {
 							}
 						},
 						style: 'success',
-						tip: {
+						confirm: {
 							title: '提示',
 							desc: '确认变更为治愈状态？'
 						}
@@ -114,7 +114,7 @@ function main() {
 							'Table.delete': {}
 						},
 						style: 'danger',
-						tip: {
+						confirm: {
 							title: '提示',
 							desc: '确认删除，删除后数据无法恢复？'
 						}
@@ -155,8 +155,20 @@ function main() {
 						props: {}
 					},
 					edit: {
-						type: 'Input',
-						props: {}
+						type: 'Select',
+						props: {
+							xProps: {
+								search: {
+									api: '/api/mock/Select',
+									key: 'keywords',
+									params: {
+										id: ':id',
+										doctor_id: ':doctor_id',
+										select: 'label,value'
+									}
+								}
+							}
+						}
 					}
 				},
 				消费金额: {

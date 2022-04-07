@@ -1,0 +1,19 @@
+{
+      "name": "测试组件用接口",
+      "version": "1.0.0",
+      "description": "测试组件用接口",
+      "group": "mock",
+      "guard": "-",
+      "paths": [
+            {
+                  "path": "/Select",
+                  "method": "GET",
+                  "guard": "-",
+                  "process": "flows.mock.select.index",
+                  "out": {
+                        "status": 200,
+                        "type": "application/json"
+                  }
+            }
+      ]
+}
