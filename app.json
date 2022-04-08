@@ -1,6 +1,7 @@
 {
       "name": "Pet Hospital",
       "description": "The management system for pet hospital.",
+      "mode": "production",
       "login": {
             "entry": {
                   "admin": "/x/Table/pet",

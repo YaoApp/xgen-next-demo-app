@@ -151,19 +151,24 @@ function main() {
 				状态: {
 					bind: 'status',
 					view: {
-						type: 'Text',
-						props: {}
+						type: 'Tag',
+						props: {
+							remote: {
+								api: '/api/mock/Select',
+								params: {
+									select: 'label,value'
+								}
+							},
+							pure: true
+						}
 					},
 					edit: {
 						type: 'Select',
 						props: {
 							xProps: {
-								search: {
+								remote: {
 									api: '/api/mock/Select',
-									key: 'keywords',
 									params: {
-										id: ':id',
-										doctor_id: ':doctor_id',
 										select: 'label,value'
 									}
 								}
