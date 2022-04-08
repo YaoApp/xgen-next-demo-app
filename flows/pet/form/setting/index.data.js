@@ -1,7 +1,7 @@
 function main() {
 	return {
 		primary: 'id',
-		header: {
+		operation: {
 			preset: {
 				save: { back: false },
 				back: {}
