@@ -2,14 +2,14 @@
       "name": "Pet Api",
       "version": "1.0.0",
       "description": "User API",
-      "group": "table/pet",
+      "group": "xiang/form/pet",
       "guard": "bearer-jwt",
       "paths": [
             {
                   "path": "/setting",
                   "method": "GET",
                   "guard": "-",
-                  "process": "flows.table.pet.setting.index",
+                  "process": "flows.pet.form.setting.index",
                   "out": {
                         "status": 200,
                         "type": "application/json"
