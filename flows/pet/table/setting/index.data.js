@@ -92,11 +92,11 @@ function main() {
 						}
 					},
 					{
-						title: '跳转查看',
+						title: '查看详情',
 						icon: 'icon-book-open',
 						action: {
 							'Common.historyPush': {
-								pathname: '/x/Form/pet/:id'
+								pathname: '/x/Form/pet/:id/edit'
 							}
 						}
 					},
