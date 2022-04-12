@@ -44,13 +44,54 @@ function main() {
 					desc: '宠物的一些基本信息',
 					columns: [
 						{
-							name: '名称'
+							width: 12,
+							tabs: [
+								{
+									title: 'Tab 1',
+									columns: [
+										{ name: '名称', width: 12 },
+										{ name: '状态', width: 12 }
+									]
+								},
+								{
+									title: 'Tab 2',
+									columns: [
+										{ name: '名称', width: 12 },
+										{ name: '状态', width: 12 }
+									]
+								}
+							]
 						},
 						{
-							name: '状态'
+							width: 12,
+							tabs: [
+								{
+									title: 'Tab 1',
+									columns: [
+										{ name: '名称', width: 12 },
+										{ name: '状态', width: 12 }
+									]
+								},
+								{
+									title: 'Tab 2',
+									columns: [
+										{ name: '名称', width: 12 },
+										{ name: '状态', width: 12 }
+									]
+								}
+							]
 						},
 						{
-							name: '消费金额'
+							name: '名称',
+							width: 8
+						},
+						{
+							name: '状态',
+							width: 8
+						},
+						{
+							name: '消费金额',
+							width: 8
 						}
 					]
 				},
