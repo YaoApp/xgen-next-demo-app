@@ -37,22 +37,7 @@
             },
             "find": {
                   "process": "models.pet.Find",
-                  "guard": "-",
-                  "default": [
-                        null,
-                        {
-                              "withs": {
-                                    "doctor": {
-                                          "query": {
-                                                "select": [
-                                                      "id",
-                                                      "name"
-                                                ]
-                                          }
-                                    }
-                              }
-                        }
-                  ]
+                  "guard": "-"
             }
       }
 }
