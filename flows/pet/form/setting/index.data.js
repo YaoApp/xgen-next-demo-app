@@ -44,7 +44,7 @@ function main() {
 					desc: '宠物的一些基本信息',
 					columns: [
 						{
-							width: 12,
+							width: 24,
 							tabs: [
 								{
 									title: 'Tab 1',
@@ -63,13 +63,73 @@ function main() {
 							]
 						},
 						{
-							width: 12,
+							width: 24,
 							tabs: [
 								{
 									title: 'Tab 1',
 									columns: [
-										{ name: '名称', width: 12 },
-										{ name: '状态', width: 12 }
+										{
+											width: 12,
+											tabs: [
+												{
+													title: 'Inner Tab 1',
+													columns: [
+														{
+															name: '名称',
+															width: 12
+														},
+														{
+															name: '状态',
+															width: 12
+														}
+													]
+												},
+												{
+													title: 'Inner Tab 2',
+													columns: [
+														{
+															name: '名称',
+															width: 12
+														},
+														{
+															name: '状态',
+															width: 12
+														}
+													]
+												}
+											]
+										},
+										{
+											width: 12,
+											tabs: [
+												{
+													title: 'Inner Tab 1',
+													columns: [
+														{
+															name: '名称',
+															width: 12
+														},
+														{
+															name: '状态',
+															width: 12
+														}
+													]
+												},
+												{
+													title: 'Inner Tab 2',
+													columns: [
+														{
+															name: '名称',
+															width: 12
+														},
+														{
+															name: '状态',
+															width: 12
+														}
+													]
+												}
+											]
+										}
 									]
 								},
 								{
@@ -100,7 +160,16 @@ function main() {
 					desc: '更为详细的宠物信息',
 					columns: [
 						{
-							name: '消费金额'
+							name: '名称',
+							width: 8
+						},
+						{
+							name: '状态',
+							width: 8
+						},
+						{
+							name: '消费金额',
+							width: 8
 						}
 					]
 				}
