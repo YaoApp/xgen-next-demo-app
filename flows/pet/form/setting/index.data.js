@@ -1,5 +1,6 @@
 function main() {
 	return {
+		name: '宠物',
 		primary: 'id',
 		operation: {
 			preset: {
@@ -47,111 +48,54 @@ function main() {
 							width: 24,
 							tabs: [
 								{
-									title: 'Tab 1',
-									columns: [
-										{ name: '名称', width: 12 },
-										{ name: '状态', width: 12 }
-									]
-								},
-								{
-									title: 'Tab 2',
-									columns: [
-										{ name: '名称', width: 12 },
-										{ name: '状态', width: 12 }
-									]
-								}
-							]
-						},
-						{
-							width: 24,
-							tabs: [
-								{
-									title: 'Tab 1',
+									title: 'Base',
 									columns: [
 										{
-											width: 12,
-											tabs: [
-												{
-													title: 'Inner Tab 1',
-													columns: [
-														{
-															name: '名称',
-															width: 12
-														},
-														{
-															name: '状态',
-															width: 12
-														}
-													]
-												},
-												{
-													title: 'Inner Tab 2',
-													columns: [
-														{
-															name: '名称',
-															width: 12
-														},
-														{
-															name: '状态',
-															width: 12
-														}
-													]
-												}
-											]
+											name: 'ID',
+											width: 12
 										},
 										{
-											width: 12,
-											tabs: [
-												{
-													title: 'Inner Tab 1',
-													columns: [
-														{
-															name: '名称',
-															width: 12
-														},
-														{
-															name: '状态',
-															width: 12
-														}
-													]
-												},
-												{
-													title: 'Inner Tab 2',
-													columns: [
-														{
-															name: '名称',
-															width: 12
-														},
-														{
-															name: '状态',
-															width: 12
-														}
-													]
-												}
-											]
+											name: '名称',
+											width: 12
 										}
 									]
 								},
 								{
-									title: 'Tab 2',
+									title: 'More',
 									columns: [
-										{ name: '名称', width: 12 },
-										{ name: '状态', width: 12 }
+										{
+											name: '类型',
+											width: 12
+										},
+										{
+											name: '状态',
+											width: 12
+										}
 									]
 								}
 							]
+						}
+					]
+				},
+				{
+					title: '基础信息',
+					desc: '宠物的一些基本信息',
+					columns: [
+						{
+							name: 'ID',
+							width: 12
 						},
 						{
 							name: '名称',
-							width: 8
+							width: 12
+						},
+						{
+							name: '类型',
+							width: 12
 						},
 						{
 							name: '状态',
-							width: 8
-						},
-						{
-							name: '消费金额',
-							width: 8
+							width: 12
 						}
 					]
 				},
@@ -160,15 +104,15 @@ function main() {
 					desc: '更为详细的宠物信息',
 					columns: [
 						{
-							name: '名称',
-							width: 8
-						},
-						{
-							name: '状态',
+							name: '住院天数',
 							width: 8
 						},
 						{
 							name: '消费金额',
+							width: 8
+						},
+						{
+							name: '关联人员',
 							width: 8
 						}
 					]
@@ -177,6 +121,15 @@ function main() {
 		},
 		fileds: {
 			form: {
+				ID: {
+					bind: 'id',
+					edit: {
+						type: 'Input',
+						props: {
+							disabled: true
+						}
+					}
+				},
 				名称: {
 					bind: 'name',
 					edit: {
@@ -186,23 +139,40 @@ function main() {
 						}
 					}
 				},
+				类型: {
+					bind: 'type',
+					edit: {
+						type: 'Select',
+						props: {
+							options: [
+								{ label: '狗狗', value: 'dog' },
+								{ label: '猫猫', value: 'cat' },
+								{ label: '其他', value: 'others' }
+							]
+						}
+					}
+				},
 				状态: {
 					bind: 'status',
 					edit: {
 						type: 'Select',
 						props: {
 							xProps: {
-								search: {
+								remote: {
 									api: '/api/mock/Select',
-									key: 'keywords',
 									params: {
-										id: ':id',
-										doctor_id: ':doctor_id',
 										select: 'label,value'
 									}
 								}
 							}
 						}
+					}
+				},
+				住院天数: {
+					bind: 'stay',
+					edit: {
+						type: 'Input',
+						props: {}
 					}
 				},
 				消费金额: {
@@ -211,8 +181,18 @@ function main() {
 						type: 'Input',
 						props: {}
 					}
+				},
+				关联人员: {
+					bind: 'doctor_id',
+					edit: {
+						type: 'Input',
+						props: {}
+					}
 				}
 			}
+		},
+		config: {
+			showAnchor: true
 		}
 	}
 }
