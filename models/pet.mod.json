@@ -56,6 +56,11 @@
                   "type": "json",
                   "comment": "相关职工",
                   "index": true
+            },
+            {
+                  "name": "images",
+                  "type": "json",
+                  "comment": "相关图片"
             }
       ],
       "relations": {

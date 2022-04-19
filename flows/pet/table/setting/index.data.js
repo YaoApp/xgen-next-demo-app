@@ -44,6 +44,9 @@ function main() {
 			props: {},
 			columns: [
 				{
+					name: '相关图片'
+				},
+				{
 					name: '名称'
 				},
 				{
@@ -156,6 +159,18 @@ function main() {
 				}
 			},
 			table: {
+				相关图片: {
+					bind: 'images',
+					view: {
+						type: 'Image',
+						props: {
+							preview: false,
+							width: 40,
+							height: 40,
+							style: { borderRadius: 40 }
+						}
+					}
+				},
 				名称: {
 					bind: 'name',
 					view: {
@@ -200,10 +215,12 @@ function main() {
 				消费金额: {
 					bind: 'cost',
 					view: {
-						type: 'Tooltip',
-						props: {
-							title: ':name'
-						}
+						type: 'Text',
+						props: {}
+					},
+					edit: {
+						type: 'Input',
+						props: {}
 					}
 				}
 			}
