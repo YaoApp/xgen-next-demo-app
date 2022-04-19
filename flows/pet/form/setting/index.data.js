@@ -4,7 +4,7 @@ function main() {
 		primary: 'id',
 		operation: {
 			preset: {
-				save: { back: false },
+				save: { back: true },
 				back: {}
 			},
 			actions: [

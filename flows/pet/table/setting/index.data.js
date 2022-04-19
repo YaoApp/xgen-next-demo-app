@@ -57,6 +57,7 @@ function main() {
 						icon: 'icon-eye',
 						action: {
 							'Common.openModal': {
+								width: 480,
 								Form: {
 									type: 'view',
 									model: 'pet'
