@@ -33,6 +33,10 @@ function main() {
 				{
 					name: '名称',
 					width: 4
+				},
+				{
+					name: '状态',
+					width: 4
 				}
 			]
 		},
@@ -133,6 +137,22 @@ function main() {
 							placeholder: '请输入宠物名称'
 						}
 					}
+				},
+				状态: {
+					bind: 'where.status.in',
+					edit: {
+						type: 'Select',
+						props: {
+							xProps: {
+								remote: {
+									api: '/api/mock/Select',
+									params: {
+										select: 'label,value'
+									}
+								}
+							}
+						}
+					}
 				}
 			},
 			table: {
@@ -180,12 +200,10 @@ function main() {
 				消费金额: {
 					bind: 'cost',
 					view: {
-						type: 'Text',
-						props: {}
-					},
-					edit: {
-						type: 'Input',
-						props: {}
+						type: 'A',
+						props: {
+							href: ':name'
+						}
 					}
 				}
 			}
