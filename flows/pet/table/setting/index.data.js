@@ -200,9 +200,9 @@ function main() {
 				消费金额: {
 					bind: 'cost',
 					view: {
-						type: 'A',
+						type: 'Tooltip',
 						props: {
-							href: ':name'
+							title: ':name'
 						}
 					}
 				}
