@@ -1,4 +1,4 @@
-function main(args) {
+function main() {
 	return [
 		{
 			value: 'zhejiang',

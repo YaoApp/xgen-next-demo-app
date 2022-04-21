@@ -44,9 +44,6 @@ function main() {
 			props: {},
 			columns: [
 				{
-					name: '相关图片'
-				},
-				{
 					name: '名称'
 				},
 				{
@@ -144,11 +141,11 @@ function main() {
 				状态: {
 					bind: 'where.status.in',
 					edit: {
-						type: 'Select',
+						type: 'Cascader',
 						props: {
 							xProps: {
 								remote: {
-									api: '/api/mock/Select',
+									api: '/api/mock/Cascader',
 									params: {
 										select: 'label,value'
 									}
@@ -159,18 +156,6 @@ function main() {
 				}
 			},
 			table: {
-				相关图片: {
-					bind: 'images',
-					view: {
-						type: 'Image',
-						props: {
-							preview: false,
-							width: 40,
-							height: 40,
-							style: { borderRadius: 40 }
-						}
-					}
-				},
 				名称: {
 					bind: 'name',
 					view: {

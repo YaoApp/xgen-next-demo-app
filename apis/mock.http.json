@@ -14,6 +14,16 @@
                         "status": 200,
                         "type": "application/json"
                   }
+            },
+            {
+                  "path": "/Cascader",
+                  "method": "GET",
+                  "guard": "-",
+                  "process": "flows.mock.cascader.index",
+                  "out": {
+                        "status": 200,
+                        "type": "application/json"
+                  }
             }
       ]
 }
