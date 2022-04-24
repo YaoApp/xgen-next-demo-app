@@ -142,7 +142,7 @@ function main() {
 				类型: {
 					bind: 'type',
 					edit: {
-						type: 'Select',
+						type: 'CheckboxGroup',
 						props: {
 							options: [
 								{ label: '狗狗', value: 'dog' },
