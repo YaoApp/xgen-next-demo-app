@@ -61,6 +61,16 @@
                   "name": "images",
                   "type": "json",
                   "comment": "相关图片"
+            },
+            {
+                  "name": "test_string",
+                  "comment": "测试字段（字符串）",
+                  "type": "string"
+            },
+            {
+                  "name": "test_number",
+                  "comment": "测试字段（数字）",
+                  "type": "integer"
             }
       ],
       "relations": {

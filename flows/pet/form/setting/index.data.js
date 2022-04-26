@@ -142,15 +142,14 @@ function main() {
 				类型: {
 					bind: 'type',
 					edit: {
-						type: 'Mentions',
+						type: 'RadioGroup',
 						props: {
 							xProps: {
-								search: {
+								remote: {
 									api: '/api/mock/Radio',
 									params: {
 										select: 'label,value'
-									},
-									key: 'keyword'
+									}
 								}
 							}
 						}
