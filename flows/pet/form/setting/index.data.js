@@ -142,13 +142,16 @@ function main() {
 				类型: {
 					bind: 'type',
 					edit: {
-						type: 'CheckboxGroup',
+						type: 'RadioGroup',
 						props: {
-							options: [
-								{ label: '狗狗', value: 'dog' },
-								{ label: '猫猫', value: 'cat' },
-								{ label: '其他', value: 'others' }
-							]
+							xProps: {
+								remote: {
+									api: '/api/mock/Select',
+									params: {
+										select: 'label,value'
+									}
+								}
+							}
 						}
 					}
 				},

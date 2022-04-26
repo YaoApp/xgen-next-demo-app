@@ -141,11 +141,11 @@ function main() {
 				状态: {
 					bind: 'where.status.in',
 					edit: {
-						type: 'Cascader',
+						type: 'Select',
 						props: {
 							xProps: {
 								remote: {
-									api: '/api/mock/Cascader',
+									api: '/api/mock/Select',
 									params: {
 										select: 'label,value'
 									}
