@@ -181,7 +181,7 @@ function main() {
 				消费金额: {
 					bind: 'cost',
 					edit: {
-						type: 'Input',
+						type: 'InputNumber',
 						props: {}
 					}
 				},
