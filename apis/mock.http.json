@@ -24,6 +24,16 @@
                         "status": 200,
                         "type": "application/json"
                   }
+            },
+            {
+                  "path": "/Radio",
+                  "method": "GET",
+                  "guard": "-",
+                  "process": "flows.mock.radio.index",
+                  "out": {
+                        "status": 200,
+                        "type": "application/json"
+                  }
             }
       ]
 }

@@ -146,7 +146,7 @@ function main() {
 						props: {
 							xProps: {
 								remote: {
-									api: '/api/mock/Select',
+									api: '/api/mock/Radio',
 									params: {
 										select: 'label,value'
 									}
