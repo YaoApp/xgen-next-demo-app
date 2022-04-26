@@ -71,6 +71,11 @@
                   "name": "test_number",
                   "comment": "测试字段（数字）",
                   "type": "integer"
+            },
+            {
+                  "name": "test_array",
+                  "comment": "测试字段（数组）",
+                  "type": "json"
             }
       ],
       "relations": {

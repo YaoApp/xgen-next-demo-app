@@ -212,17 +212,18 @@ function main() {
 					}
 				},
 				更新时间: {
-					bind: 'test_string',
+					bind: 'test_array',
 					view: {
 						type: 'Text',
 						props: {
-							format: 'YYYY-MM-DD HH:mm:ss'
+							format: 'YYYY/MM/DD HH:mm:ss'
 						}
 					},
 					edit: {
-						type: 'DatePicker',
+						type: 'RangePicker',
 						props: {
-							showTime: true
+							showTime: { format: 'HH:mm:ss' },
+							format: 'YYYY/MM/DD HH:mm:ss'
 						}
 					}
 				}
