@@ -44,6 +44,10 @@ function main() {
 			props: {},
 			columns: [
 				{
+					name: '相关图片',
+					width: 360
+				},
+				{
 					name: '名称'
 				},
 				{
@@ -156,6 +160,20 @@ function main() {
 				}
 			},
 			table: {
+				相关图片: {
+					bind: 'test_array',
+					view: {
+						type: 'Image',
+						props: {}
+					},
+					edit: {
+						type: 'Upload',
+						props: {
+							filetype: 'video',
+							maxCount: 10
+						}
+					}
+				},
 				名称: {
 					bind: 'name',
 					view: {

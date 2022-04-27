@@ -105,14 +105,18 @@ function main() {
 					columns: [
 						{
 							name: '住院天数',
-							width: 12
+							width: 8
 						},
 						{
 							name: '消费金额',
-							width: 12
+							width: 8
 						},
 						{
 							name: '关联人员',
+							width: 8
+						},
+						{
+							name: '相关图片',
 							width: 24
 						}
 					]
@@ -188,17 +192,18 @@ function main() {
 				关联人员: {
 					bind: 'doctor_id',
 					edit: {
-						type: 'Tree',
-                                    props: {
-                                          xProps: {
-								remote: {
-									api: '/api/mock/Tree',
-									params: {
-										select: 'label,value'
-									}
-								}
-							}
-                                    }
+						type: 'Input',
+						props: {}
+					}
+				},
+				相关图片: {
+					bind: 'test_array',
+					edit: {
+						type: 'Upload',
+						props: {
+							filetype: 'video',
+							maxCount: 10
+						}
 					}
 				}
 			}
