@@ -51,9 +51,6 @@ function main() {
 				},
 				{
 					name: '消费金额'
-				},
-				{
-					name: '更新时间'
 				}
 			],
 			operation: {
@@ -209,22 +206,6 @@ function main() {
 					edit: {
 						type: 'Input',
 						props: {}
-					}
-				},
-				更新时间: {
-					bind: 'test_array',
-					view: {
-						type: 'Text',
-						props: {
-							format: 'YYYY/MM/DD HH:mm:ss'
-						}
-					},
-					edit: {
-						type: 'RangePicker',
-						props: {
-							showTime: { format: 'HH:mm:ss' },
-							format: 'YYYY/MM/DD HH:mm:ss'
-						}
 					}
 				}
 			}
