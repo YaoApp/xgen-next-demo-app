@@ -105,15 +105,15 @@ function main() {
 					columns: [
 						{
 							name: '住院天数',
-							width: 8
+							width: 12
 						},
 						{
 							name: '消费金额',
-							width: 8
+							width: 12
 						},
 						{
 							name: '关联人员',
-							width: 8
+							width: 24
 						}
 					]
 				}
@@ -133,7 +133,7 @@ function main() {
 				名称: {
 					bind: 'name',
 					edit: {
-						type: 'TextArea',
+						type: 'Input',
 						props: {
 							placeholder: '请输入宠物名称'
 						}
@@ -188,8 +188,17 @@ function main() {
 				关联人员: {
 					bind: 'doctor_id',
 					edit: {
-						type: 'Input',
-						props: {}
+						type: 'Tree',
+                                    props: {
+                                          xProps: {
+								remote: {
+									api: '/api/mock/Tree',
+									params: {
+										select: 'label,value'
+									}
+								}
+							}
+                                    }
 					}
 				}
 			}

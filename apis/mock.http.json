@@ -34,6 +34,16 @@
                         "status": 200,
                         "type": "application/json"
                   }
+            },
+            {
+                  "path": "/Tree",
+                  "method": "GET",
+                  "guard": "-",
+                  "process": "flows.mock.tree.index",
+                  "out": {
+                        "status": 200,
+                        "type": "application/json"
+                  }
             }
       ]
 }
