@@ -114,10 +114,6 @@ function main() {
 						{
 							name: '关联人员',
 							width: 8
-						},
-						{
-							name: '相关图片',
-							width: 24
 						}
 					]
 				}
@@ -194,16 +190,6 @@ function main() {
 					edit: {
 						type: 'Input',
 						props: {}
-					}
-				},
-				相关图片: {
-					bind: 'test_array',
-					edit: {
-						type: 'Upload',
-						props: {
-							filetype: 'video',
-							maxCount: 10
-						}
 					}
 				}
 			}

@@ -29,7 +29,7 @@ const menu = [
 		icon: '',
 		rank: 2,
 		status: 'enabled',
-		visible_menu: 1,
+		visible_menu: 0,
 		blocks: 0
 	},
 	{
@@ -62,7 +62,7 @@ const menu = [
 		icon: '',
 		rank: 2,
 		status: 'enabled',
-		visible_menu: 1,
+		visible_menu: 0,
 		blocks: 0
 	},
 	{
@@ -95,7 +95,7 @@ const menu = [
 		icon: '',
 		rank: 2,
 		status: 'enabled',
-		visible_menu: 1,
+		visible_menu: 0,
 		blocks: 0
 	},
 	{
