@@ -77,22 +77,25 @@ function main() {
 							]
 						}
 					},
-					table: {
-						height: 240,
-						columns: [
-							{
-								title: 'ID',
-								dataIndex: 'id'
-							},
-							{
-								title: '类型',
-								dataIndex: 'type'
-							},
-							{
-								title: '数量',
-								dataIndex: 'count'
-							}
-						]
+					refer: {
+						type: 'Table',
+						props: {
+							height: 240,
+							columns: [
+								{
+									title: 'ID',
+									dataIndex: 'id'
+								},
+								{
+									title: '类型',
+									dataIndex: 'type'
+								},
+								{
+									title: '数量',
+									dataIndex: 'count'
+								}
+							]
+						}
 					}
 				},
 				状态分布: {
@@ -126,22 +129,25 @@ function main() {
 							]
 						}
 					},
-					table: {
-						height: 240,
-						columns: [
-							{
-								title: 'ID',
-								dataIndex: 'id'
-							},
-							{
-								title: '状态',
-								dataIndex: 'status'
-							},
-							{
-								title: '数量',
-								dataIndex: 'count'
-							}
-						]
+					refer: {
+						type: 'Table',
+						props: {
+							height: 240,
+							columns: [
+								{
+									title: 'ID',
+									dataIndex: 'id'
+								},
+								{
+									title: '状态',
+									dataIndex: 'status'
+								},
+								{
+									title: '数量',
+									dataIndex: 'count'
+								}
+							]
+						}
 					}
 				},
 				综合消费: {
