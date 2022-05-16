@@ -55,14 +55,6 @@ function main() {
 						props: {
 							height: 240,
 							x_key: 'type',
-							tooltip: {
-								textStyle: {
-									color: '#a2a5b9',
-									fontSize: 12
-								},
-								backgroundColor: '#232326',
-								borderRadius: 6
-							},
 							series: [
 								{
 									name: 'count',
