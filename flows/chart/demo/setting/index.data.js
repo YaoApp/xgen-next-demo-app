@@ -65,7 +65,7 @@ function main() {
 							},
 							series: [
 								{
-									name: 'type',
+									name: 'count',
 									type: 'pie',
 									roseType: 'area',
 									radius: [10, 100],
@@ -82,10 +82,6 @@ function main() {
 						props: {
 							height: 240,
 							columns: [
-								{
-									title: 'ID',
-									dataIndex: 'id'
-								},
 								{
 									title: '类型',
 									dataIndex: 'type'
@@ -135,10 +131,6 @@ function main() {
 							height: 240,
 							columns: [
 								{
-									title: 'ID',
-									dataIndex: 'id'
-								},
-								{
 									title: '状态',
 									dataIndex: 'status'
 								},
@@ -165,8 +157,10 @@ function main() {
 							},
 							series: [
 								{
-									name: 'cost',
-									type: 'bar',
+									name: 'stay',
+									type: 'line',
+									smooth: true,
+									symbolSize: 8,
 									itemStyle: {
 										borderRadius: 6
 									},
@@ -178,10 +172,8 @@ function main() {
 									}
 								},
 								{
-									name: 'stay',
-									type: 'line',
-									smooth: true,
-									symbolSize: 8,
+									name: 'cost',
+									type: 'bar',
 									itemStyle: {
 										borderRadius: 6
 									},

@@ -1,17 +1,50 @@
 const menu = [
 	{
-		id: 1,
+		id: 10,
+		name: 'CoolScreen',
+		path: '/x/Chart/cool',
+		icon: 'icon-monitor',
+		rank: 10,
+		status: 'enabled',
+		visible_menu: 0,
+		blocks: 0,
+		parent: null
+	},
+	{
+		id: 20,
+		name: 'Dashboard',
+		path: '/x/Chart/dashboard',
+		icon: 'icon-compass',
+		rank: 20,
+		status: 'enabled',
+		visible_menu: 0,
+		blocks: 0,
+		parent: null
+	},
+	{
+		id: 30,
+		name: 'Chart',
+		path: '/x/Chart/demo',
+		icon: 'icon-bar-chart',
+		rank: 30,
+		status: 'enabled',
+		visible_menu: 0,
+		blocks: 0,
+		parent: null
+	},
+	{
+		id: 40,
 		name: 'Pet',
 		path: '/x/Table/pet',
 		icon: 'icon-twitch',
-		rank: 1,
+		rank: 40,
 		status: 'enabled',
 		visible_menu: 1,
 		blocks: 0,
 		parent: null
 	},
 	{
-		parent: 1,
+		parent: 40,
 		id: 2,
 		name: 'Pet List',
 		path: '/x/Table/pet',
@@ -33,18 +66,18 @@ const menu = [
 		blocks: 0
 	},
 	{
-		id: 4,
+		id: 50,
 		name: 'Doctor',
 		path: '/x/Table/doctor',
 		icon: 'icon-users',
-		rank: 2,
+		rank: 50,
 		status: 'enabled',
 		visible_menu: 1,
 		blocks: 0,
 		parent: null
 	},
 	{
-		parent: 4,
+		parent: 50,
 		id: 5,
 		name: 'Doctor List',
 		path: '/x/Table/doctor',
@@ -55,7 +88,7 @@ const menu = [
 		blocks: 0
 	},
 	{
-		parent: 4,
+		parent: 50,
 		id: 6,
 		name: 'Add Doctor',
 		path: '/x/Form/doctor/0/edit',
@@ -66,18 +99,18 @@ const menu = [
 		blocks: 0
 	},
 	{
-		parent: null,
-		id: 7,
+		id: 60,
 		name: 'Archive',
 		path: '/x/Table/archive',
 		icon: 'icon-folder',
-		rank: 3,
+		rank: 60,
 		status: 'enabled',
 		visible_menu: 1,
-		blocks: 0
+		blocks: 0,
+		parent: null
 	},
 	{
-		parent: 7,
+		parent: 60,
 		id: 8,
 		name: 'Archive List',
 		path: '/x/Table/archive',
@@ -88,7 +121,7 @@ const menu = [
 		blocks: 0
 	},
 	{
-		parent: 7,
+		parent: 60,
 		id: 9,
 		name: 'Add Archive',
 		path: '/x/Form/archive/0/edit',
@@ -99,59 +132,59 @@ const menu = [
 		blocks: 0
 	},
 	{
-		parent: null,
-		id: 10,
+		id: 70,
 		name: 'Department',
 		path: '/x/Table/department',
 		icon: 'icon-map',
-		rank: 4,
+		rank: 70,
 		status: 'enabled',
 		visible_menu: 0,
-		blocks: 0
+		blocks: 0,
+		parent: null
 	},
 	{
-		parent: null,
-		id: 11,
+		id: 80,
 		name: 'Case',
 		path: '/x/Table/case',
 		icon: 'icon-file',
-		rank: 5,
+		rank: 80,
 		status: 'enabled',
 		visible_menu: 0,
-		blocks: 0
+		blocks: 0,
+		parent: null
 	},
 	{
-		parent: null,
-		id: 12,
+		id: 90,
 		name: 'Finance',
 		path: '/x/Table/finance',
 		icon: 'icon-dollar-sign',
-		rank: 6,
+		rank: 90,
 		status: 'enabled',
 		visible_menu: 0,
-		blocks: 0
+		blocks: 0,
+		parent: null
 	},
 	{
-		parent: null,
-		id: 13,
+		id: 100,
 		name: 'Help',
 		path: '/x/Table/help',
 		icon: 'icon-help-circle',
-		rank: 7,
+		rank: 100,
 		status: 'enabled',
 		visible_menu: 0,
-		blocks: 0
+		blocks: 0,
+		parent: null
 	},
 	{
-		parent: null,
-		id: 14,
+		id: 110,
 		name: 'Disease',
 		path: '/x/Table/disease',
 		icon: 'icon-clipboard',
-		rank: 8,
+		rank: 110,
 		status: 'enabled',
 		visible_menu: 0,
-		blocks: 0
+		blocks: 0,
+		parent: null
 	}
 ]
 

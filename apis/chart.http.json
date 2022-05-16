@@ -1,0 +1,29 @@
+{
+      "name": "测试组件用接口",
+      "version": "1.0.0",
+      "description": "测试组件用接口",
+      "group": "chart",
+      "guard": "-",
+      "paths": [
+            {
+                  "path": "/demo/setting",
+                  "method": "GET",
+                  "guard": "-",
+                  "process": "flows.chart.demo.setting.index",
+                  "out": {
+                        "status": 200,
+                        "type": "application/json"
+                  }
+            },
+            {
+                  "path": "/demo/data",
+                  "method": "GET",
+                  "guard": "-",
+                  "process": "flows.chart.demo.data.index",
+                  "out": {
+                        "status": 200,
+                        "type": "application/json"
+                  }
+            }
+      ]
+}
