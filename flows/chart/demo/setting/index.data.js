@@ -17,7 +17,7 @@ function main() {
 			columns: [
 				{
 					name: '时间区间',
-					width: 4
+					width: 6
 				}
 			]
 		},
@@ -33,7 +33,7 @@ function main() {
 				},
 				{
 					name: '综合消费',
-					width: 12
+					width: 24
 				}
 			]
 		},
@@ -103,9 +103,7 @@ function main() {
 							x_key: 'status',
 							axisLabel: {
 								interval: 0,
-								textStyle: {
-									fontSize: 10
-								}
+								fontSize: 12
 							},
 							series: [
 								{
@@ -151,9 +149,7 @@ function main() {
 							x_key: 'name',
 							axisLabel: {
 								interval: 0,
-								textStyle: {
-									fontSize: 10
-								}
+								fontSize: 12
 							},
 							series: [
 								{

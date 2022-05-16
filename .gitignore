@@ -8,3 +8,5 @@ db/*.db
 
 data
 logs/application.log
+
+!flows/**/data
