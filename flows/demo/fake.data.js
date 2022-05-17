@@ -2,7 +2,7 @@ const menu = [
 	{
 		id: 10,
 		name: 'CoolScreen',
-		path: '/x/Chart/cool',
+		path: '/x/Cool/demo',
 		icon: 'icon-monitor',
 		rank: 10,
 		status: 'enabled',
