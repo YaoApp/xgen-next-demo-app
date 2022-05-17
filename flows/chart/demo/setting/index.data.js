@@ -54,7 +54,7 @@ function main() {
 						type: 'Pie',
 						props: {
 							height: 240,
-							x_key: 'type',
+							base: 'type',
 							series: [
 								{
 									name: 'count',
@@ -92,7 +92,7 @@ function main() {
 						type: 'Bar',
 						props: {
 							height: 240,
-							x_key: 'status',
+							base: 'status',
 							axisLabel: {
 								interval: 0,
 								fontSize: 12
@@ -138,7 +138,7 @@ function main() {
 						type: 'LineBar',
 						props: {
 							height: 240,
-							x_key: 'name',
+							base: 'name',
 							axisLabel: {
 								interval: 0,
 								fontSize: 12
