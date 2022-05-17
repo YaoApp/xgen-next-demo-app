@@ -72,7 +72,6 @@ function main() {
 					refer: {
 						type: 'Table',
 						props: {
-							height: 240,
 							columns: [
 								{
 									title: '类型',
@@ -118,7 +117,6 @@ function main() {
 					refer: {
 						type: 'Table',
 						props: {
-							height: 240,
 							columns: [
 								{
 									title: '状态',
