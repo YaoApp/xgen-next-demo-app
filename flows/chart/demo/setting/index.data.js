@@ -6,9 +6,10 @@ function main() {
 				{
 					title: '跳转至大屏',
 					icon: 'icon-airplay',
-					props: {
-						type: 'history.push',
-						payload: '/x/Cool/demo'
+					action: {
+						'Common.historyPush': {
+							pathname: '/x/Cool/demo'
+						}
 					}
 				}
 			]
@@ -50,6 +51,7 @@ function main() {
 			chart: {
 				类型排布: {
 					bind: 'datasource_type',
+					link: '/x/Table/pet',
 					view: {
 						type: 'Pie',
 						props: {
