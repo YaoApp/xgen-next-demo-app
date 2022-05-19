@@ -42,6 +42,16 @@
                   "index": true
             },
             {
+                  "name": "mode",
+                  "comment": "状态",
+                  "type": "enum",
+                  "option": [
+                        "enabled",
+                        "disabled"
+                  ],
+                  "index": true
+            },
+            {
                   "name": "stay",
                   "comment": "入院时间",
                   "type": "integer"

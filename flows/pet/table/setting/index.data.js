@@ -47,10 +47,13 @@ function main() {
 					name: '名称'
 				},
 				{
+					name: '消费金额'
+				},
+				{
 					name: '状态'
 				},
 				{
-					name: '消费金额'
+					name: '入院状态'
 				}
 			],
 			operation: {
@@ -169,7 +172,7 @@ function main() {
 						}
 					}
 				},
-				状态: {
+				入院状态: {
 					bind: 'status',
 					view: {
 						type: 'Tag',
@@ -194,6 +197,18 @@ function main() {
 									}
 								}
 							}
+						}
+					}
+				},
+				状态: {
+					bind: 'mode',
+					view: {
+						type: 'Switch',
+						props: {
+							checkedValue: 'enabled',
+							unCheckedValue: 'disabled',
+							checkedChildren: '开启',
+							unCheckedChildren: '关闭'
 						}
 					}
 				},
