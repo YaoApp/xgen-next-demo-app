@@ -63,9 +63,21 @@ function main() {
 				{
 					name: '支出',
 					width: 8
-                        },
-                        {
+				},
+				{
 					name: '综合评分',
+					width: 8
+				},
+				{
+					name: '收入_折线图',
+					width: 8
+				},
+				{
+					name: '支出_折线图',
+					width: 8
+				},
+				{
+					name: '综合评分_折线图',
 					width: 8
 				},
 				{
@@ -113,24 +125,74 @@ function main() {
 					view: {
 						type: 'NumberChart',
 						props: {
-                                          chartHeight: 150,
-                                          color:'red',
+							chartHeight: 150,
+							color: 'red',
 							prefix: '¥',
 							decimals: 2,
 							name_key: 'date',
 							value_key: 'value'
 						}
 					}
-                        },
-                        综合评分: {
+				},
+				综合评分: {
 					bind: 'rate',
 					link: '/x/Table/pet',
 					view: {
 						type: 'NumberChart',
 						props: {
-                                          chartHeight: 150,
-                                          color:'orange',
-                                          unit: '分',
+							chartHeight: 150,
+							color: 'orange',
+							unit: '分',
+							decimals: 1,
+							name_key: 'date',
+							value_key: 'value'
+						}
+					}
+				},
+				收入_折线图: {
+					bind: 'income',
+                              link: '/x/Table/pet',
+                              cardStyle: { padding: 0 },
+					view: {
+						type: 'NumberChart',
+						props: {
+							type: 'line',
+							chartHeight: 120,
+							prefix: '¥',
+							decimals: 2,
+							name_key: 'date',
+							value_key: 'value'
+						}
+					}
+				},
+				支出_折线图: {
+					bind: 'cost',
+                              link: '/x/Table/pet',
+                              cardStyle: { padding: 0 },
+					view: {
+						type: 'NumberChart',
+						props: {
+							type: 'line',
+							chartHeight: 120,
+							color: 'red',
+							prefix: '¥',
+							decimals: 2,
+							name_key: 'date',
+							value_key: 'value'
+						}
+					}
+				},
+				综合评分_折线图: {
+					bind: 'rate',
+                              link: '/x/Table/pet',
+                              cardStyle: { padding: 0 },
+					view: {
+						type: 'NumberChart',
+						props: {
+							type: 'line',
+							chartHeight: 120,
+							color: 'orange',
+							unit: '分',
 							decimals: 1,
 							name_key: 'date',
 							value_key: 'value'
@@ -238,7 +300,7 @@ function main() {
 									radius: [10, 100],
 									center: ['60%', '50%'],
 									itemStyle: {
-										borderRadius: 3
+										borderRadius: 6
 									}
 								}
 							]
@@ -277,7 +339,7 @@ function main() {
 									type: 'bar',
 									colorBy: 'data',
 									itemStyle: {
-										borderRadius: 3
+										borderRadius: 6
 									},
 									splitLine: {
 										show: false
