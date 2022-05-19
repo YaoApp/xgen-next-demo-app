@@ -1,5 +1,83 @@
 function main() {
 	return {
+		income: [
+			{
+				value: 40300,
+				date: '2022-1-1'
+			},
+			{
+				value: 50800,
+				date: '2022-2-1'
+			},
+			{
+				value: 31300,
+				date: '2022-3-1'
+			},
+			{
+				value: 48800,
+				date: '2022-4-1'
+			},
+			{
+				value: 69900,
+				date: '2022-5-1'
+			},
+			{
+				value: 37800,
+				date: '2022-6-1'
+			}
+		],
+		cost: [
+			{
+				value: 28100,
+				date: '2022-1-1'
+			},
+			{
+				value: 23000,
+				date: '2022-2-1'
+			},
+			{
+				value: 29300,
+				date: '2022-3-1'
+			},
+			{
+				value: 26700,
+				date: '2022-4-1'
+			},
+			{
+				value: 26400,
+				date: '2022-5-1'
+			},
+			{
+				value: 31200,
+				date: '2022-6-1'
+			}
+            ],
+            rate: [
+			{
+				value: 8.0,
+				date: '2022-1-1'
+			},
+			{
+				value: 7.6,
+				date: '2022-2-1'
+			},
+			{
+				value: 9.1,
+				date: '2022-3-1'
+			},
+			{
+				value: 8.4,
+				date: '2022-4-1'
+			},
+			{
+				value: 6.9,
+				date: '2022-5-1'
+			},
+			{
+				value: 9.0,
+				date: '2022-6-1'
+			}
+		],
 		pet_count: 54,
 		pet_type: 8,
 		income_monthly: 68900,

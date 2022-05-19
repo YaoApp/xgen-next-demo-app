@@ -39,8 +39,8 @@ function main() {
 				{
 					name: '医师数量',
 					width: 6
-                        },
-                        {
+				},
+				{
 					name: '宠物数量_上月',
 					width: 6
 				},
@@ -55,6 +55,18 @@ function main() {
 				{
 					name: '医师数量_上月',
 					width: 6
+				},
+				{
+					name: '收入',
+					width: 8
+				},
+				{
+					name: '支出',
+					width: 8
+                        },
+                        {
+					name: '综合评分',
+					width: 8
 				},
 				{
 					name: '类型排布',
@@ -81,6 +93,50 @@ function main() {
 				}
 			},
 			chart: {
+				收入: {
+					bind: 'income',
+					link: '/x/Table/pet',
+					view: {
+						type: 'NumberChart',
+						props: {
+							chartHeight: 150,
+							prefix: '¥',
+							decimals: 2,
+							name_key: 'date',
+							value_key: 'value'
+						}
+					}
+				},
+				支出: {
+					bind: 'cost',
+					link: '/x/Table/pet',
+					view: {
+						type: 'NumberChart',
+						props: {
+                                          chartHeight: 150,
+                                          color:'red',
+							prefix: '¥',
+							decimals: 2,
+							name_key: 'date',
+							value_key: 'value'
+						}
+					}
+                        },
+                        综合评分: {
+					bind: 'rate',
+					link: '/x/Table/pet',
+					view: {
+						type: 'NumberChart',
+						props: {
+                                          chartHeight: 150,
+                                          color:'orange',
+                                          unit: '分',
+							decimals: 1,
+							name_key: 'date',
+							value_key: 'value'
+						}
+					}
+				},
 				宠物数量: {
 					bind: 'pet_count',
 					link: '/x/Table/pet',
@@ -105,7 +161,7 @@ function main() {
 					view: {
 						type: 'Number',
 						props: {
-							unit: '元',
+							unit: '元'
 						}
 					}
 				},
@@ -117,34 +173,34 @@ function main() {
 							unit: '个'
 						}
 					}
-                        },
-                        宠物数量_上月: {
+				},
+				宠物数量_上月: {
 					bind: 'prev_pet_count',
 					link: '/x/Table/pet',
 					cardStyle: { padding: 0 },
 					view: {
 						type: 'Number',
 						props: {
-                                          unit: '个',
+							unit: '个',
 							prev_title: '上月数据'
 						}
 					}
 				},
 				宠物类型_上月: {
-                              bind: 'prev_pet_type',
-                              link: '/x/Table/pet',
+					bind: 'prev_pet_type',
+					link: '/x/Table/pet',
 					cardStyle: { padding: 0 },
 					view: {
 						type: 'Number',
 						props: {
-                                          unit: '种',
+							unit: '种',
 							prev_title: '上月数据'
 						}
 					}
 				},
 				当月收入_上月: {
-                              bind: 'prev_income_monthly',
-                              link: '/x/Table/pet',
+					bind: 'prev_income_monthly',
+					link: '/x/Table/pet',
 					cardStyle: { padding: 0 },
 					view: {
 						type: 'Number',
@@ -155,17 +211,17 @@ function main() {
 					}
 				},
 				医师数量_上月: {
-                              bind: 'prev_doctor_count',
-                              link: '/x/Table/pet',
+					bind: 'prev_doctor_count',
+					link: '/x/Table/pet',
 					cardStyle: { padding: 0 },
 					view: {
 						type: 'Number',
 						props: {
-                                          unit: '个',
+							unit: '个',
 							prev_title: '上月数据'
 						}
 					}
-                        },
+				},
 				类型排布: {
 					bind: 'datasource_type',
 					link: '/x/Table/pet',
