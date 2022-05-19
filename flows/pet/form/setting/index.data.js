@@ -133,7 +133,7 @@ function main() {
 				名称: {
 					bind: 'name',
 					edit: {
-						type: 'ColorPicker',
+						type: 'Input',
 						props: {
 							placeholder: '请输入宠物名称'
 						}

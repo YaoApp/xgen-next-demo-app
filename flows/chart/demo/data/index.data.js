@@ -1,5 +1,25 @@
 function main() {
 	return {
+		pet_count: 54,
+		pet_type: 8,
+		income_monthly: 68900,
+		doctor_count: 23,
+		prev_pet_count: {
+			current: 54,
+			prev: 45
+		},
+		prev_pet_type: {
+			current: 8,
+			prev: 13
+		},
+		prev_income_monthly: {
+			current: 68900,
+			prev: 92000
+		},
+		prev_doctor_count: {
+			current: 23,
+			prev: 27
+		},
 		datasource_type: [
 			{
 				type: '猫猫',
