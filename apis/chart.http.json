@@ -24,6 +24,26 @@
                         "status": 200,
                         "type": "application/json"
                   }
+            },
+            {
+                  "path": "/landscape/setting",
+                  "method": "GET",
+                  "guard": "-",
+                  "process": "flows.chart.landscape.setting.index",
+                  "out": {
+                        "status": 200,
+                        "type": "application/json"
+                  }
+            },
+            {
+                  "path": "/landscape/data",
+                  "method": "GET",
+                  "guard": "-",
+                  "process": "flows.chart.landscape.data.index",
+                  "out": {
+                        "status": 200,
+                        "type": "application/json"
+                  }
             }
       ]
 }

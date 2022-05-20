@@ -114,8 +114,8 @@ function main() {
 							chartHeight: 150,
 							prefix: '¥',
 							decimals: 2,
-							name_key: 'date',
-							value_key: 'value'
+							nameKey: 'date',
+							valueKey: 'value'
 						}
 					}
 				},
@@ -129,8 +129,8 @@ function main() {
 							color: 'red',
 							prefix: '¥',
 							decimals: 2,
-							name_key: 'date',
-							value_key: 'value'
+							nameKey: 'date',
+							valueKey: 'value'
 						}
 					}
 				},
@@ -144,8 +144,8 @@ function main() {
 							color: 'orange',
 							unit: '分',
 							decimals: 1,
-							name_key: 'date',
-							value_key: 'value'
+							nameKey: 'date',
+							valueKey: 'value'
 						}
 					}
 				},
@@ -160,8 +160,8 @@ function main() {
 							chartHeight: 120,
 							prefix: '¥',
 							decimals: 2,
-							name_key: 'date',
-							value_key: 'value'
+							nameKey: 'date',
+							valueKey: 'value'
 						}
 					}
 				},
@@ -177,8 +177,8 @@ function main() {
 							color: 'red',
 							prefix: '¥',
 							decimals: 2,
-							name_key: 'date',
-							value_key: 'value'
+							nameKey: 'date',
+							valueKey: 'value'
 						}
 					}
 				},
@@ -194,8 +194,8 @@ function main() {
 							color: 'orange',
 							unit: '分',
 							decimals: 1,
-							name_key: 'date',
-							value_key: 'value'
+							nameKey: 'date',
+							valueKey: 'value'
 						}
 					}
 				},
@@ -291,11 +291,10 @@ function main() {
 						type: 'Pie',
 						props: {
 							height: 240,
-							base: 'type',
+							nameKey: 'type',
 							series: [
 								{
-									name: 'count',
-									type: 'pie',
+									valueKey: 'count',
 									roseType: 'area',
 									radius: [10, 100],
 									center: ['60%', '50%'],
@@ -328,14 +327,14 @@ function main() {
 						type: 'Bar',
 						props: {
 							height: 240,
-							base: 'status',
+							nameKey: 'status',
 							axisLabel: {
 								interval: 0,
 								fontSize: 12
 							},
 							series: [
 								{
-									name: 'count',
+									valueKey: 'count',
 									type: 'bar',
 									colorBy: 'data',
 									itemStyle: {
@@ -373,14 +372,14 @@ function main() {
 						type: 'LineBar',
 						props: {
 							height: 240,
-							base: 'name',
+							nameKey: 'name',
 							axisLabel: {
 								interval: 0,
 								fontSize: 12
 							},
 							series: [
 								{
-									name: 'stay',
+									valueKey: 'stay',
 									type: 'line',
 									smooth: true,
 									symbolSize: 8,
@@ -395,7 +394,7 @@ function main() {
 									}
 								},
 								{
-									name: 'cost',
+									valueKey: 'cost',
 									type: 'bar',
 									itemStyle: {
 										borderRadius: 6

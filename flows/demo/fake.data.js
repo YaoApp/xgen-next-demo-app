@@ -20,10 +20,21 @@ const menu = [
 		visible_menu: 0,
 		blocks: 0,
 		parent: null
+      },
+      {
+		id: 29,
+		name: 'Chart Landscape',
+		path: '/x/Chart/landscape',
+		icon: 'icon-grid',
+		rank: 29,
+		status: 'enabled',
+		visible_menu: 0,
+		blocks: 0,
+		parent: null
 	},
 	{
 		id: 30,
-		name: 'Chart',
+		name: 'Chart Demo',
 		path: '/x/Chart/demo',
 		icon: 'icon-bar-chart',
 		rank: 30,
@@ -55,7 +66,7 @@ const menu = [
 		blocks: 0
 	},
 	{
-		parent: 1,
+		parent: 40,
 		id: 3,
 		name: 'Add Pet',
 		path: '/x/Form/pet/0/edit',
@@ -98,94 +109,94 @@ const menu = [
 		visible_menu: 0,
 		blocks: 0
 	},
-	{
-		id: 60,
-		name: 'Archive',
-		path: '/x/Table/archive',
-		icon: 'icon-folder',
-		rank: 60,
-		status: 'enabled',
-		visible_menu: 1,
-		blocks: 0,
-		parent: null
-	},
-	{
-		parent: 60,
-		id: 8,
-		name: 'Archive List',
-		path: '/x/Table/archive',
-		icon: '',
-		rank: 1,
-		status: 'enabled',
-		visible_menu: 1,
-		blocks: 0
-	},
-	{
-		parent: 60,
-		id: 9,
-		name: 'Add Archive',
-		path: '/x/Form/archive/0/edit',
-		icon: '',
-		rank: 2,
-		status: 'enabled',
-		visible_menu: 0,
-		blocks: 0
-	},
-	{
-		id: 70,
-		name: 'Department',
-		path: '/x/Table/department',
-		icon: 'icon-map',
-		rank: 70,
-		status: 'enabled',
-		visible_menu: 0,
-		blocks: 0,
-		parent: null
-	},
-	{
-		id: 80,
-		name: 'Case',
-		path: '/x/Table/case',
-		icon: 'icon-file',
-		rank: 80,
-		status: 'enabled',
-		visible_menu: 0,
-		blocks: 0,
-		parent: null
-	},
-	{
-		id: 90,
-		name: 'Finance',
-		path: '/x/Table/finance',
-		icon: 'icon-dollar-sign',
-		rank: 90,
-		status: 'enabled',
-		visible_menu: 0,
-		blocks: 0,
-		parent: null
-	},
-	{
-		id: 100,
-		name: 'Help',
-		path: '/x/Table/help',
-		icon: 'icon-help-circle',
-		rank: 100,
-		status: 'enabled',
-		visible_menu: 0,
-		blocks: 0,
-		parent: null
-	},
-	{
-		id: 110,
-		name: 'Disease',
-		path: '/x/Table/disease',
-		icon: 'icon-clipboard',
-		rank: 110,
-		status: 'enabled',
-		visible_menu: 0,
-		blocks: 0,
-		parent: null
-	}
+	// {
+	// 	id: 60,
+	// 	name: 'Archive',
+	// 	path: '/x/Table/archive',
+	// 	icon: 'icon-folder',
+	// 	rank: 60,
+	// 	status: 'enabled',
+	// 	visible_menu: 1,
+	// 	blocks: 0,
+	// 	parent: null
+	// },
+	// {
+	// 	parent: 60,
+	// 	id: 8,
+	// 	name: 'Archive List',
+	// 	path: '/x/Table/archive',
+	// 	icon: '',
+	// 	rank: 1,
+	// 	status: 'enabled',
+	// 	visible_menu: 1,
+	// 	blocks: 0
+	// },
+	// {
+	// 	parent: 60,
+	// 	id: 9,
+	// 	name: 'Add Archive',
+	// 	path: '/x/Form/archive/0/edit',
+	// 	icon: '',
+	// 	rank: 2,
+	// 	status: 'enabled',
+	// 	visible_menu: 0,
+	// 	blocks: 0
+	// },
+	// {
+	// 	id: 70,
+	// 	name: 'Department',
+	// 	path: '/x/Table/department',
+	// 	icon: 'icon-map',
+	// 	rank: 70,
+	// 	status: 'enabled',
+	// 	visible_menu: 0,
+	// 	blocks: 0,
+	// 	parent: null
+	// },
+	// {
+	// 	id: 80,
+	// 	name: 'Case',
+	// 	path: '/x/Table/case',
+	// 	icon: 'icon-file',
+	// 	rank: 80,
+	// 	status: 'enabled',
+	// 	visible_menu: 0,
+	// 	blocks: 0,
+	// 	parent: null
+	// },
+	// {
+	// 	id: 90,
+	// 	name: 'Finance',
+	// 	path: '/x/Table/finance',
+	// 	icon: 'icon-dollar-sign',
+	// 	rank: 90,
+	// 	status: 'enabled',
+	// 	visible_menu: 0,
+	// 	blocks: 0,
+	// 	parent: null
+	// },
+	// {
+	// 	id: 100,
+	// 	name: 'Help',
+	// 	path: '/x/Table/help',
+	// 	icon: 'icon-help-circle',
+	// 	rank: 100,
+	// 	status: 'enabled',
+	// 	visible_menu: 0,
+	// 	blocks: 0,
+	// 	parent: null
+	// },
+	// {
+	// 	id: 110,
+	// 	name: 'Disease',
+	// 	path: '/x/Table/disease',
+	// 	icon: 'icon-clipboard',
+	// 	rank: 110,
+	// 	status: 'enabled',
+	// 	visible_menu: 0,
+	// 	blocks: 0,
+	// 	parent: null
+	// }
 ]
 
 const admin = [
