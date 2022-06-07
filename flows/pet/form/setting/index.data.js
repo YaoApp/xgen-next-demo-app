@@ -45,6 +45,10 @@ function main() {
 					desc: '宠物的一些基本信息',
 					columns: [
 						{
+							name: '动态列表',
+							width: 24
+						},
+						{
 							width: 24,
 							tabs: [
 								{
@@ -120,7 +124,19 @@ function main() {
 			]
 		},
 		fileds: {
-			form: {
+                  form: {
+                        动态列表: {
+                              bind: 'dynamic',
+                              edit: {
+                                    type: 'DynamicList',
+                                    props: {
+                                          setting: 'dynamic',
+                                          query: {
+                                                sort: '$index'
+                                          }
+                                    }
+                              }
+                        },
 				ID: {
 					bind: 'id',
 					edit: {

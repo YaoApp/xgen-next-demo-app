@@ -1,0 +1,97 @@
+{
+      "label": "配置",
+      "version": "1.0.0",
+      "description": "配置",
+      "nodes": [],
+      "output": {
+            "columns": {
+                  "文字": {
+                        "label": "文字",
+                        "edit": {
+                              "type": "label",
+                              "props": {
+                                    "value": "每"
+                              }
+                        }
+                  },
+                  "分组": {
+                        "label": "分组",
+                        "edit": {
+                              "type": "input",
+                              "props": {
+                                    "value": ":group"
+                              }
+                        }
+                  },
+                  "指标类型": {
+                        "label": "指标类型",
+                        "edit": {
+                              "type": "select",
+                              "props": {
+                                    "value": ":type",
+                                    "xProps": {
+                                          "remote": {
+                                                "api": "/api/mock/Select",
+                                                "query": {
+                                                      "select": [
+                                                            "id",
+                                                            "name"
+                                                      ],
+                                                      "keyword": "where_name_like"
+                                                }
+                                          }
+                                    }
+                              }
+                        }
+                  },
+                  "数值": {
+                        "label": "数值",
+                        "edit": {
+                              "type": "select",
+                              "props": {
+                                    "value": ":value",
+                                    "options": [
+                                          {
+                                                "label": "0",
+                                                "value": 0
+                                          },
+                                          {
+                                                "label": "100",
+                                                "value": 100
+                                          },
+                                          {
+                                                "label": "200",
+                                                "value": 200
+                                          }
+                                    ]
+                              }
+                        }
+                  }
+            },
+            "list": {
+                  "primary": "id",
+                  "layout": {
+                        "columns": [
+                              {
+                                    "name": "分组",
+                                    "width": 23
+                              },
+                              {
+                                    "name": "文字",
+                                    "width": 1
+                              }
+                        ],
+                        "children": [
+                              {
+                                    "name": "指标类型",
+                                    "width": 12
+                              },
+                              {
+                                    "name": "数值",
+                                    "width": 12
+                              }
+                        ]
+                  }
+            }
+      }
+}
