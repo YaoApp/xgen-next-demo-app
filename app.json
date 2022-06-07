@@ -12,6 +12,9 @@
                   "login": "/api/user/login"
             }
       },
+      "token": {
+            "storage": "localStorage"
+      },
       "optional": {
             "hideNotification": false,
             "hideSetting": false
