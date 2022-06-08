@@ -2,7 +2,7 @@
       "name": "配置",
       "version": "1.0.0",
       "description": "配置API",
-      "group": "__yao/setting",
+      "group": "xiang/setting",
       "guard": "-",
       "paths": [
             {

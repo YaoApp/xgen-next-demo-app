@@ -2,7 +2,7 @@
       "name": "测试组件用接口",
       "version": "1.0.0",
       "description": "测试组件用接口",
-      "group": "__yao/chart",
+      "group": "xiang/chart",
       "guard": "-",
       "paths": [
             {

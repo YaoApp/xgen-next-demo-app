@@ -2,7 +2,7 @@
       "name": "Pet Api",
       "version": "1.0.0",
       "description": "User API",
-      "group": "__yao/form/pet",
+      "group": "xiang/form/pet",
       "guard": "bearer-jwt",
       "paths": [
             {

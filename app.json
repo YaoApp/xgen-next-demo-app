@@ -2,6 +2,7 @@
       "name": "Pet Hospital",
       "description": "The management system for pet hospital.",
       "mode": "production",
+      "apiPrefix": "xiang",
       "login": {
             "entry": {
                   "admin": "/x/Table/pet",
