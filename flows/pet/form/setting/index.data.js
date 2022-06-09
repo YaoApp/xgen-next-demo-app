@@ -43,7 +43,11 @@ function main() {
 				{
 					title: '基础信息',
 					desc: '宠物的一些基本信息',
-					columns: [
+                              columns: [
+                                    {
+							name: '扩展展示',
+							width: 24
+						},
 						{
 							width: 24,
 							tabs: [
@@ -120,7 +124,17 @@ function main() {
 			]
 		},
 		fileds: {
-                  form: {
+			form: {
+				扩展展示: {
+					bind: 'id',
+					edit: {
+						type: 'Extend',
+						props: {
+							link: '/extend/test',
+							useJs: true
+						}
+					}
+				},
 				ID: {
 					bind: 'id',
 					edit: {
