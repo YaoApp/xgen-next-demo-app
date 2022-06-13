@@ -3,6 +3,8 @@
       "description": "The management system for pet hospital.",
       "mode": "production",
       "apiPrefix": "xiang",
+      "logo": "/assets/logo.png",
+      "favicon": "/assets/favicon.ico",
       "login": {
             "entry": {
                   "admin": "/x/Table/pet",
@@ -11,6 +13,12 @@
             "user": {
                   "captcha": "/api/user/captcha",
                   "login": "/api/user/login"
+            },
+            "layout": {
+                  "cover": "/assets/cover.svg",
+                  "slogan": "Make Your Dream With Xii App Engine",
+                  "site": "https://baidu.com",
+                  "showSNS": true
             }
       },
       "token": {
