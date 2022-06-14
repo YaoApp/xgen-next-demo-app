@@ -13,7 +13,20 @@ function main() {
 					delete: true
 				},
 				import: {
-					bind: 'order'
+					api: {
+						setting: '/api/xiang/import/pet/setting',
+						mapping: '/api/xiang/import/pet/mapping',
+						preview: '/api/xiang/import/pet/data',
+						import: '/api/xiang/import/pet',
+						mapping_setting_model: 'import_pet_mapping',
+						preview_setting_model: 'import_pet_preview'
+					},
+					operation: [
+						{
+							title: '跳转',
+							link: 'https://baidu.com'
+						}
+					]
 				}
 			},
 			actions: [

@@ -1,0 +1,20 @@
+{
+      "name": "配置",
+      "version": "1.0.0",
+      "description": "配置API",
+      "group": "xiang/import/pet",
+      "guard": "-",
+      "paths": [
+            {
+                  "path": "/setting",
+                  "method": "GET",
+                  "guard": "-",
+                  "process": "flows.pet.import.setting.index",
+                  "in": [],
+                  "out": {
+                        "status": 200,
+                        "type": "application/json"
+                  }
+            }
+      ]
+}

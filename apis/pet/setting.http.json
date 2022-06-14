@@ -1,0 +1,22 @@
+{
+      "name": "配置",
+      "version": "1.0.0",
+      "description": "配置API",
+      "group": "xiang/import/pet",
+      "guard": "-",
+      "paths": [
+            {
+                  "path": "/dynamic",
+                  "method": "GET",
+                  "guard": "-",
+                  "process": "flows.settings.dynamic",
+                  "in": [
+                        ":query"
+                  ],
+                  "out": {
+                        "status": 200,
+                        "type": "application/json"
+                  }
+            }
+      ]
+}
