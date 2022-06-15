@@ -1,0 +1,80 @@
+{
+      "title": "导入宠物数据",
+      "process": "scripts.import.index",
+      "columns": [
+            {
+                  "label": "名称",
+                  "name": "name",
+                  "match": [
+                        "名称"
+                  ],
+                  "rules": [
+                        "scripts.rules.test_a"
+                  ]
+            },
+            {
+                  "label": "类型",
+                  "name": "type",
+                  "match": [
+                        "类型"
+                  ],
+                  "rules": [
+                        "scripts.rules.test_b"
+                  ]
+            },
+            {
+                  "label": "入院状态",
+                  "name": "status",
+                  "match": [
+                        "入院状态"
+                  ],
+                  "rules": [
+                        "scripts.rules.test_c"
+                  ]
+            },
+            {
+                  "label": "状态",
+                  "name": "mode",
+                  "match": [
+                        "状态"
+                  ],
+                  "rules": [
+                        "scripts.rules.test_d"
+                  ]
+            },
+            {
+                  "label": "入院时间",
+                  "name": "stay",
+                  "match": [
+                        "入院时间"
+                  ],
+                  "rules": [
+                        "scripts.rules.test_a"
+                  ]
+            },
+            {
+                  "label": "花费",
+                  "name": "cost",
+                  "match": [
+                        "花费"
+                  ],
+                  "rules": [
+                        "scripts.rules.test_b"
+                  ]
+            }
+      ],
+      "option": {
+            "autoMatching": true,
+            "chunkSize": 3,
+            "logging": "error",
+            "mappingPreview": "auto",
+            "dataPreview": "auto",
+            "templateLink": "/somelinke/download/xxx"
+      },
+      "rules": {
+            "scripts.rules.test_a": "test_a",
+            "scripts.rules.test_b": "test_b",
+            "scripts.rules.test_c": "test_c",
+            "scripts.rules.test_d": "test_d"
+      }
+}

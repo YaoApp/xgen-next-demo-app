@@ -1,0 +1,12 @@
+{
+      "name": "宠物列表",
+      "version": "1.0.0",
+      "decription": "宠物列表",
+      "bind": {},
+      "apis": {
+            "setting": {
+                  "process": "flows.pet.import.import_pet_preview.index",
+                  "guard": "-"
+            }
+      }
+}
