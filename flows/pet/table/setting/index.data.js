@@ -8,9 +8,17 @@ function main() {
 						{
 							name: '名称',
 							width: 12
+						},
+						{
+							name: '消费金额',
+							width: 12
+						},
+						{
+							name: '入院状态',
+							width: 12
 						}
 					],
-					delete: true
+					deletable: true
 				},
 				import: {
 					api: {
